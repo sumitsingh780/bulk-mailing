@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Email Sender Tool</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="static/logo.jpg" alt="Logo" class="logo">
+            <h1>Email Sender Tool</h1>
+        </header>
+        <form id="emailForm">
+            <label for="senderEmail">Sender Email:</label>
+            <input type="email" id="senderEmail" required>
+
+            <label for="senderPassword">Sender Password:</label>
+            <input type="password" id="senderPassword" required>
+
+            <label for="emailFile">Email Data File:</label>
+            <input type="file" id="emailFile" accept=".xlsx,.xls" required>
+
+            <label for="emailSubject">Email Subject:</label>
+            <input type="text" id="emailSubject" required>
+
+            <label for="emailBody">Email Body:</label>
+            <textarea id="emailBody" rows="10" required></textarea>
+
+            <button type="submit">Send Emails</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <footer class="creator-section">
+        <img src="static/image.jpg" alt="Your Name" class="creator-photo">
+        <div class="creator-details">
+            <h3>SUMIT SINGH</h3>
+            <p>About the Email Sender Tool
+                The Email Sender Tool is a user-friendly application designed for bulk emailing, aimed at simplifying
+                the process of sending personalized emails to multiple recipients efficiently. Whether you're a
+                marketer, a business owner, or an individual looking to reach out to a large audience, this tool
+                provides an intuitive interface for managing your email campaigns.
+            </p>
+        </div>
+    </footer>
+
+    <script src="static/script.js"></script>
+</body>
+
+</html>
