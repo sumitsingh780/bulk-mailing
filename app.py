@@ -41,7 +41,7 @@ def send_emails():
             )
 
             # Add a 3-second delay between emails to prevent being flagged as spam
-            time.sleep(3)
+            time.sleep(5)
 
         return jsonify({'message': 'Emails sent successfully!'}), 200
 
